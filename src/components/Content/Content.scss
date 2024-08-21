@@ -1,0 +1,27 @@
+/* src/styles/Content.scss */
+/* Styles pour l'en-tête et le menu de navigation */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: inherit;
+    color: inherit;
+  } 
+
+/* src/components/Content.scss */
+
+/* Styles de base pour la transition */
+body {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+/* Conteneur de contenu */
+.dark-mode, .light-mode {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+
+/* Autres styles de contenu */
+.header, .footer, main, body, html {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}

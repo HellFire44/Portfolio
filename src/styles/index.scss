@@ -1,0 +1,35 @@
+/* src/styles/index.scss */
+@import '../styles/variables.scss';
+
+/* Styles globaux */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* Mode sombre */
+.dark-mode {
+
+  main {
+    background-color: $d1;
+    .accueil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  footer {
+    background-color: $d1;
+  }
+}
+
+/* Mode clair */
+.light-mode {
+
+  main {
+    background-color: $l1;
+  }
+  footer {
+    background-color: $l1;
+  }
+}
+

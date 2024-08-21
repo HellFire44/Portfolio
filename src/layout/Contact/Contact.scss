@@ -1,0 +1,177 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact {
+    font-family: "Montserrat" sans-serif;
+    // Style pour le conteneur global de contact
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+    .contact-container {
+      display: flex;
+      border-radius: 25px;
+      width: 100%;
+      max-width: 816px; // Ajuste la largeur maximale du conteneur
+      margin-top: 20px;
+      gap: 20px; // Espace entre les deux colonnes
+  
+      .contact-info {
+        flex: 1;
+        padding-left: 20px;
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        #icon-reply {
+            position: relative;
+            bottom: 60px;
+            left: 250px;
+            font-size: 80px;
+            transform: rotate(180deg);
+
+        }
+        .email-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          font-size: 16px;
+  
+          svg {
+            margin-right: 10px;
+
+          }
+        }
+      }
+  
+      .contact-forms {
+        flex: 1;
+        padding: 20px;
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+  
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            
+            label {
+              font-size: 1rem;
+              margin-bottom: 5px;
+            }
+  
+            input,
+            textarea {
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              font-size: 1rem;
+              color: #333;
+            }
+  
+            input {
+              height: 40px;
+            }
+  
+            textarea {
+              resize: vertical;
+            }
+          }
+  
+          button {
+            align-self: flex-start;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff; // Couleur de fond du bouton
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: #0056b3; // Couleur de fond du bouton au survol
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .dark-mode {
+    font-family: "Montserrat" sans-serif;
+
+    .contact {
+        
+        .contact-container {
+            background-color: $d2;
+
+            .contact-info {
+                h3 {
+                    color: $l1;
+
+                    strong {
+                        color: $d5;
+                    }
+                }
+
+                .email-info {
+                    font-family: "Montserrat" sans-serif;
+                    color: $l1;
+                    svg {
+                        color: $d5;
+                    }
+                }
+            }
+            label {
+                font-family: "Montserrat" sans-serif;
+
+                font-weight: 600;
+                font-size: 15px;
+                color: $l1;
+            }
+        }
+
+        
+    }
+
+  }
+
+  .light-mode {
+    .contact {
+        
+        .contact-container {
+            background-color: $l2;
+
+            .contact-info {
+                h3 {
+                    color: $d1;
+
+                    strong {
+                        color: $l5;
+                    }
+                }
+
+                .email-info {
+                    color: $d1;
+                    svg {
+                        color: $l5;
+                    }
+                }
+            }
+            label {
+                font-weight: 600;
+                font-size: 15px;
+                color: $d1;
+            }
+        }
+
+        
+    }
+
+  }

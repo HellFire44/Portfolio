@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../../styles/variables.scss';
+html {
+  scroll-behavior: smooth;
+  transition: background-color 3.3s, color 3.3s!important;
+
+}
+/* Mode sombre */
+.dark-mode {
+  header {
+    background: linear-gradient(0.25turn, $d2, $d3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar {
+    color: white;
+  }
+  svg {
+    color: #ffffff;
+  }
+}
+
+/* Mode clair */
+.light-mode {
+  header {
+    background: linear-gradient(0.25turn, $l2, $l3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar {
+    color: black;
+  }
+  svg {
+    color: black;
+  }
+}
+
+/* Styles généraux */
+header {
+  position: fixed; /* Fixe le header en haut de la page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+  padding: 0; /* Supprime le padding du header pour éviter l'agrandissement */
+  background-color: inherit;
+}
+
+.navbar {
+  display: flex; /* Pour aligner les éléments de la navbar */
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: center; /* Centre les éléments horizontalement */
+  height: 60px; /* Hauteur définie pour la navbar */
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fc2221; /* Couleur de survol */
+}
+.nav-links a:active {
+  color: #fc2221; /* Couleur de survol */
+}
+/* Ajoute un padding au contenu principal pour compenser la hauteur du header */
+.main-content {
+  padding-top: 60px; /* Correspond à la hauteur de la navbar */
+}

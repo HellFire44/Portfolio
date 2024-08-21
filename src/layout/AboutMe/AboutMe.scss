@@ -1,0 +1,134 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-title {
+    position: relative;
+    bottom: 150px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.banner-text {
+    position: relative;
+    bottom: 170px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.aboutme {
+    padding-top: 80px;
+}
+.aboutme-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 20px; /* Espacement entre la photo et le contenu à droite */
+}
+
+.aboutme-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-profil {
+    width: 380px; /* Ajustez la largeur de l'image de profil selon vos besoins */
+    height: 505; /* Hauteur de l'image de profil */
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.aboutme-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutme-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Marge entre les boîtes et le texte */
+}
+
+.aboutme-box > div {
+    width: 200px; /* Largeur fixe pour chaque boîte */
+    height: 120px; /* Hauteur fixe pour chaque boîte */
+    padding: 20px;
+    background-color: $d2;
+    border-radius: 15px;
+    text-align: center;
+    color: $d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    .aboutme-box > div {
+        background-color: $d2;
+        color: $d5;
+        svg {
+            color: $d5;
+        }
+        p {
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .aboutme-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        color: white; /* Couleur de texte sombre pour la lumière */
+    }
+}
+
+.light-mode {
+    .aboutme-box > div {
+        background-color: $l2;
+        color: $l5;
+        svg {
+            color: $l5;
+        }
+        p {
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .aboutme-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        color: black; /* Couleur de texte sombre pour la lumière */
+    }
+}

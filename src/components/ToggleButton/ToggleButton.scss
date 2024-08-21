@@ -1,0 +1,16 @@
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem; /* Ajustez la taille de l'icône si nécessaire */
+    background: transparent; /* Aucun fond */
+    border: none; /* Aucune bordure */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de margin */
+    line-height: 0; /* Pas de ligne hauteur pour centrer l'icône */
+  }
+
+  .faSun {
+    color: aqua;
+  }

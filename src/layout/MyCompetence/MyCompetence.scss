@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../../styles/variables.scss';
+
+.mycompetence {
+
+    .banner-container {
+        padding-top: 50px;
+    }
+    .mycompetence-container {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux cartes de se placer sur plusieurs lignes si nécessaire */
+        gap: 20px; /* Espace entre les cartes */
+        justify-content: center; /* Centre les cartes horizontalement */
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .mycompetence-card {
+        border-radius: 25px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 10px;
+        width: 336px; /* Largeur fixe pour chaque carte */
+        display: flex;
+        flex-direction: column; /* Aligne les éléments verticalement */
+        align-items: center; /* Centre les éléments horizontalement */
+
+        .mycompetence-card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: column; /* Aligne les compétences verticalement */
+            gap: 5px; /* Espace entre les compétences */
+            width: 100%;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center; /* Centre les éléments verticalement */
+            justify-content: space-between; /* Place l'icône, le titre et la barre de progression aux extrémités */
+            width: 100%;
+            max-width: 300px; /* Limite la largeur des compétences */
+
+            .progress-info {
+                display: flex;
+                flex-direction: column; /* Place l'icône au-dessus du titre */
+                align-items: center; /* Centre les éléments horizontalement */
+                text-align: center; /* Centre le texte */
+                width: 100%;
+                margin-right: 20px; /* Espace entre le titre et la barre de progression */
+                .icon {
+                    font-size: 30px;
+                    margin-bottom: 10px; /* Espace entre l'icône et le titre */
+                }
+                h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+            }
+
+            .progress-bar {
+                height: 10px;
+                width: 350px; /* Largeur fixe pour la barre de progression */
+                border-radius: 50px;
+                background-color: #e0e0e0;
+                appearance: none;
+                
+                &::-webkit-progress-bar {
+                    background-color: #e0e0e0;
+                    border-radius: 50px;
+                }
+                &::-webkit-progress-value {
+                    background-color: $d5;
+                    border-radius: 50px;
+                }
+                &::-moz-progress-bar {
+                    background-color: $d5;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+}
+.dark-mode {
+    .mycompetence-card {
+        color: $l1;
+        background-color: $d2;
+        svg {
+            color: $d5;
+        }
+        .progress-bar {
+            background-color: $d3; /* Couleur de fond pour la barre de progression en mode sombre */
+            &::-webkit-progress-value {
+                background-color: $d5; /* Couleur de la barre de progression en mode sombre */
+            }
+            &::-moz-progress-bar {
+                background-color: $d5; /* Couleur de la barre de progression en mode sombre */
+            }
+        }
+    }
+}
+
+.light-mode {
+    .mycompetence-card {
+        color: $d1;
+        background-color: $l2;
+        svg {
+            color: $l5;
+        }
+        .progress-bar {
+            background-color: $l3; /* Couleur de fond pour la barre de progression en mode clair */
+            &::-webkit-progress-value {
+                background-color: $l5; /* Couleur de la barre de progression en mode clair */
+            }
+            &::-moz-progress-bar {
+                background-color: $l5; /* Couleur de la barre de progression en mode clair */
+            }
+        }
+    }
+}
