@@ -3,32 +3,26 @@
 
 .dark-mode {
     .accueil {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         .title-accueil {
-            padding-top: 300px;
+            padding-top: 250px;
             color: white;
             font-weight: 900;
             font-size: 50px;
+            width: 50%;
             text-transform: uppercase;
-            width: 714px;
-            height: 100px;
             text-align: center;
             font-family: "Montserrat", sans-serif;
 
         }
 
         .texte-accueil {
-            width: 766px;
-            height: 182px;
+            width: 70%;
             text-align: center;
             font-size: 25px;
             font-family: "Montserrat", sans-serif;
             font-weight: 300;
             color: white;
-            padding-bottom: 280px;
+            padding-bottom: 250px;
         }
     }
 }
@@ -40,6 +34,20 @@
         }
         .texte-accueil {
             color: black;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .accueil {
+        .title-accueil {
+            padding-top: 200px!important;
+            width: 90%!important;
+            font-size: 30px!important;
+        }
+        .texte-accueil {
+            width: 90%!important;
+            font-size: 15px!important;
         }
     }
 }

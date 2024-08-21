@@ -25,3 +25,24 @@ body {
 .header, .footer, main, body, html {
   transition: background-color 0.8s ease, color 0.8s ease;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #434343;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #690a0a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ad6060;
+}

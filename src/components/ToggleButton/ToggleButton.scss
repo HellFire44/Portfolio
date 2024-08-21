@@ -14,3 +14,14 @@
   .faSun {
     color: aqua;
   }
+  @media (max-width: 930px) {
+    .toggle-button {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 600px) {
+    .toggle-button {
+      display: none;
+    }
+  }
+  

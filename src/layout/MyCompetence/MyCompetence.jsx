@@ -34,9 +34,9 @@ const skills = {
 
 const MyCompetence = () => {
     return (
-        <div id="mycompetence" className="mycompetence">
+        <section id="mycompetence" className="mycompetence">
             <div className="banner-container">
-                <img className="banner" src={bannerImage} alt="Section A propos de moi" />
+                <img className="banner" src={bannerImage} alt="Bannière des compétences" />
                 <h1 className="banner-title">Mes compétences</h1>
                 <p className="banner-text">
                     L'évolution continue de mes compétences en développement web est le fruit de mon engagement profond dans ce métier. <br />
@@ -46,23 +46,28 @@ const MyCompetence = () => {
 
             <div className="mycompetence-container">
                 {Object.entries(skills).map(([category, items]) => (
-                    <div className="mycompetence-card" key={category}>
-                        <h1 className="mycompetence-card-title">{category}</h1>
+                    <article className="mycompetence-card" key={category}>
+                        <h2 className="mycompetence-card-title">{category}</h2>
                         <div className="skills-container">
                             {items.map((skill, index) => (
                                 <div className="skill-item" key={index}>
                                     <div className="progress-info">
-                                        <FontAwesomeIcon icon={skill.icon} className="icon" />
+                                        <FontAwesomeIcon icon={skill.icon} className="icon" aria-hidden="true" />
                                         <h3>{skill.title}</h3>
                                     </div>
-                                    <progress className="progress-bar" value={skill.value} max="1" />
+                                    <progress
+                                        className="progress-bar"
+                                        value={skill.value}
+                                        max="1"
+                                        aria-label={`${skill.title} : ${Math.round(skill.value * 100)}%`}
+                                    />
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

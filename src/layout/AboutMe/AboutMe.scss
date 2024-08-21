@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+// Styles généraux
 .banner-container {
     position: relative;
     width: 100%;
@@ -36,8 +37,9 @@
 }
 
 .aboutme {
-    padding-top: 80px;
+    padding-top: 50px;
 }
+
 .aboutme-content {
     display: flex;
     flex-direction: row;
@@ -46,6 +48,7 @@
     padding-top: 150px;
     padding-bottom: 150px;
     gap: 20px; /* Espacement entre la photo et le contenu à droite */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
 }
 
 .aboutme-left {
@@ -56,8 +59,8 @@
 }
 
 .aboutme-profil {
+    margin-left: 200px;
     width: 380px; /* Ajustez la largeur de l'image de profil selon vos besoins */
-    height: 505; /* Hauteur de l'image de profil */
     border-radius: 25px;
     object-fit: cover;
 }
@@ -130,5 +133,138 @@
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
         color: black; /* Couleur de texte sombre pour la lumière */
+    }
+}
+
+// Styles responsive
+@media (max-width: 1360px) {
+    .aboutme-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutme-left {
+        margin-left: 0;
+    }
+
+    .aboutme-profil {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .aboutme-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .aboutme-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutme-box > div {
+        width: 180px;
+        height: 100px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 930px) {
+    .banner-title {
+        font-size: 30px;
+        bottom: 100px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        bottom: 120px;
+    }
+
+    .aboutme-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .aboutme-box > div {
+        width: 160px;
+        height: 80px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 24px;
+        bottom: 80px;
+    }
+
+    .banner-text {
+        font-size: 12px;
+        bottom: 100px;
+    }
+
+    .aboutme-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .aboutme-profil {
+        width: 250px;
+    }
+
+    .aboutme-box > div {
+        width: 140px;
+        height: 70px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutme {
+        padding-top: 0;
+    }
+    .banner-container {
+        img {
+            height: 100px;
+        }
+    }
+    .banner-title {
+        font-size: 20px;
+        bottom: 80px;
+    }
+
+    .banner-text {
+        font-size: 10px;
+        bottom: 80px;
+    }
+
+    .aboutme-content {
+        padding-top: 0;
+        padding-bottom: 40px;
+
+        .aboutme-right {
+            display: flex;
+            flex-direction: column;
+
+            .aboutme-box {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .aboutme-profil {
+        width: 200px;
+    }
+
+    .aboutme-box > div {
+        width: 100px;
+        padding: 6px;
     }
 }

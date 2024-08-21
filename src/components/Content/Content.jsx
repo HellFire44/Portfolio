@@ -2,7 +2,7 @@
 import React from 'react';
 import { useDarkMode } from '../../context/DarkModeProvider';
 import ToggleButton from '../ToggleButton/ToggleButton';
-import './Content.scss'; // Assurez-vous d'importer les styles spécifiques à ce composant
+import './Content.scss';
 
 import NavBar from '../../layout/navbar/navbar';
 import Accueil from '../../layout/Accueil/Accueil';
@@ -10,6 +10,7 @@ import AboutMe from '../../layout/AboutMe/AboutMe';
 import MyCompetence from '../../layout/MyCompetence/MyCompetence';
 import Portfolio from '../../layout/Portfolio/Portfolio';
 import Contact from '../../layout/Contact/Contact';
+import Footer from '../../layout/Footer/Footer';
 
 const Content = () => {
   const { isDarkMode } = useDarkMode();
@@ -28,7 +29,7 @@ const Content = () => {
         <Contact />
       </main>
       <footer className="footer">
-        {/* Contenu du pied de page */}
+        <Footer />
       </footer>
     </div>
   );

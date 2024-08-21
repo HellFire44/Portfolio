@@ -123,3 +123,9 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .banner-container {
+        padding-top: 0!important;
+    }
+}
