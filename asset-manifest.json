@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e3fb842d.css",
+    "main.js": "/Portfolio/static/js/main.b1f1510c.js",
+    "static/media/nina_carducci.PNG": "/Portfolio/static/media/nina_carducci.5733484867b39c5f79ed.PNG",
+    "static/media/pixetmotion.PNG": "/Portfolio/static/media/pixetmotion.76b45228bd6152ba3b73.PNG",
+    "static/media/lufydoom.PNG": "/Portfolio/static/media/lufydoom.8d909f85824b18a0bffd.PNG",
+    "static/media/pixtournament.PNG": "/Portfolio/static/media/pixtournament.4604b449d2f31135dc21.PNG",
+    "static/media/photoprofil.jpg": "/Portfolio/static/media/photoprofil.986fee71cff7744f75fb.jpg",
+    "static/media/booki.png": "/Portfolio/static/media/booki.a5e25049e1bde7a9498c.png",
+    "static/media/kasa.PNG": "/Portfolio/static/media/kasa.00eb086df10375d148f4.PNG",
+    "static/media/banner.jpg": "/Portfolio/static/media/banner.1fa45cbb6b64ff0459cf.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.e3fb842d.css.map": "/Portfolio/static/css/main.e3fb842d.css.map",
+    "main.b1f1510c.js.map": "/Portfolio/static/js/main.b1f1510c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3fb842d.css",
+    "static/js/main.b1f1510c.js"
+  ]
+}
